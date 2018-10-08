@@ -14,7 +14,7 @@ class IndexController extends \Controller
     /**
      * idname of the plugin for internal use
      */
-    const IDNAME = 'post-manager';
+    const IDNAME = 'module-starter';
 
 
     /**
