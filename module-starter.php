@@ -1,7 +1,7 @@
 <?php
-namespace Plugins\PostManager;
+namespace Plugins\ModuleStarter;
 
-const IDNAME = "post-manager";
+const IDNAME = "module-starter";
 
 // Disable direct access
 if (!defined('APP_VERSION')) {
@@ -31,7 +31,7 @@ function add_module_option($package_modules)
                     <span class="icon unchecked">
                         <span class="mdi mdi-check"></span>
                     </span>
-                    <?= __('Post Manager') ?>
+                    <?= __('Module Starter') ?>
                 </span>
             </label>
         </div>
@@ -48,12 +48,6 @@ function route_maps($global_variable_name)
     $GLOBALS[$global_variable_name]->map("GET|POST", "/e/".IDNAME."/?", [
         PLUGINS_PATH . "/". IDNAME ."/controllers/IndexController.php",
         __NAMESPACE__ . "\IndexController"
-    ]);
-
-    // Schedule
-    $GLOBALS[$global_variable_name]->map("GET|POST", "/e/".IDNAME."/[i:id]/?", [
-        PLUGINS_PATH . "/". IDNAME ."/controllers/PostController.php",
-        __NAMESPACE__ . "\PostController"
     ]);
 }
 \Event::bind("router.map", __NAMESPACE__ . '\route_maps');

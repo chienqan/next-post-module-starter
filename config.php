@@ -3,12 +3,12 @@
 } ?>
 <?php 
     return [
-        "idname" => "post-manager",
-        "plugin_name" => "Post Manager",
-        "plugin_uri" => "http://instagrow.app",
-        "author" => "Instagrow",
-        "author_uri" => "http://instagrow.app",
+        "idname" => "moudle-starter",
+        "plugin_name" => "Module Starter",
+        "plugin_uri" => "http://getnextpost.io",
+        "author" => "Nextpost",
+        "author_uri" => "http://getnextpost.io",
         "version" => "1.0",
-        "desc" => "Post Manager's module to manage instagram posts. Module will show all the posts, and allow you to delete posts",
+        "desc" => "Module starter is a package module that let you create module quickly",
         "icon_style" => "background-color: #00DBDE; background: linear-gradient(136.03deg, #EECDA3 0%, #EF629F 100%); color: #fff;"
     ];

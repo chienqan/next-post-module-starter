@@ -1,5 +1,5 @@
 <?php
-namespace Plugins\PostManager;
+namespace Plugins\ModuleStarter;
 
 // Disable direct access
 if (!defined('APP_VERSION')) {
