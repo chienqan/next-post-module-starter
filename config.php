@@ -3,7 +3,7 @@
 } ?>
 <?php 
     return [
-        "idname" => "moudle-starter",
+        "idname" => "module-starter",
         "plugin_name" => "Module Starter",
         "plugin_uri" => "http://getnextpost.io",
         "author" => "Nextpost",
